@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary / test files
+tmp/
+*.tmp
+*.log
+
+# Keep records/ directory but not temporary dumps inside
+records/*.tmp
+records/*.log

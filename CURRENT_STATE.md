@@ -14,15 +14,32 @@
 - [x] Создание структуры каталогов (`docs/`, `meta/`, `records/`, `ARCHIVE/`)
 - [x] `00_ENTRY.md`
 - [x] `INVARIANTS.md`
+- [x] `CURRENT_STATE.md`
+- [x] `DECISIONS.md` (D-000000-00)
+- [x] `PROVENANCE.md` (заготовка)
+- [x] `docs/KNOWLEDGE_STATES.md`
+- [x] `docs/VISION.md`
+- [x] `docs/METHOD.md`
+- [x] `docs/ARCHITECTURE.md` (заготовка)
+- [x] `meta/agent-rules.md`
+- [x] `meta/handoff-protocol.md`
+- [x] `meta/handoff-current.md` (заготовка)
+- [x] `meta/transitions.md` (заготовка)
+- [x] `records/README.md`
+- [x] `LICENSE` (MIT)
+- [x] `.gitignore`
+- [x] `ARCHIVE/README.md`
+- [x] Git init + initial commit (`1230e62`)
+- [x] Переименование ветки `master` → `main`
 
 ## В работе
-- [ ] Заполнение оставшихся документов каркаса (`CURRENT_STATE.md`, `DECISIONS.md`, `PROVENANCE.md`, `docs/`, `meta/`, `records/`)
+- [ ] Проектирование архитектуры скрипта сбора (язык, формат выходного файла, зависимости)
 
 ## Заблокировано
 Нет.
 
 ## Следующее действие
-Создать `DECISIONS.md` с записью D-000000-00 (initial setup).
+Заполнить `docs/ARCHITECTURE.md` и зафиксировать первое решение по языку/инструменту скрипта (D-20261013-01).
 
 ## Известные проблемы
 - GitHub-зеркало `shaenxxx-commits/nova-registry` ещё не создано; raw-ссылки в `00_ENTRY.md` не заполнены.

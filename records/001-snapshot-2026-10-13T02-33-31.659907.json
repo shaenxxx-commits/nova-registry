@@ -1,0 +1,228 @@
+{
+  "timestamp": "2026-10-13T02:33:31.659907",
+  "host": "nova",
+  "disk": "Файл.система                      Размер Использовано  Дост Использовано% Cмонтировано в\ntmpfs                               1,6G         3,4M  1,6G            1% /run\nefivarfs                            192K         108K   80K           58% /sys/firmware/efi/efivars\n/dev/mapper/ubuntu--vg-ubuntu--lv    98G          56G   37G           61% /\ntmpfs                               7,8G         8,0K  7,8G            1% /dev/shm\ntmpfs                               5,0M          20K  5,0M            1% /run/lock\n/dev/sda2                           448G         276G  172G           62% /mnt/shared\n/dev/sdb2                           2,0G         215M  1,6G           12% /boot\n/dev/sdb1                           1,1G         6,2M  1,1G            1% /boot/efi\ntmpfs                               1,6G         200K  1,6G            1% /run/user/1000",
+  "memory": "всего        занят        своб      общая  буф/врем.   доступно\nПамять:         15Gi       5,1Gi       5,1Gi       171Mi       4,5Gi        10Gi\nПодкачка:      4,0Gi          0B       4,0Gi",
+  "uptime": "02:33:22 up  4:31,  1 user,  load average: 1,19, 1,11, 1,05",
+  "docker": [
+    {
+      "Command": "\"python /app/nc_core…\"",
+      "CreatedAt": "2026-10-01 23:35:28 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "0cb1a1614e6b",
+      "Image": "maia-core-img",
+      "Labels": "com.docker.compose.config-hash=098bfe8b57258e7e25affe754be288d3afd4fabb4d1c191ffd326a0e5d689285,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:6296a4ce86d2b12b5f79896e11c60f5de97801d7fd617ae6139f4bf4be42870c,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/shaen/maia_project/docker-compose.yml,com.docker.compose.project.working_dir=/home/shaen/maia_project,com.docker.compose.project=maia_project,com.docker.compose.replace=maia-core-v2,com.docker.compose.service=maia-core,com.docker.compose.version=5.1.4",
+      "LocalVolumes": "0",
+      "Mounts": "/home/shaen/ma…",
+      "Names": "maia-core-v2",
+      "Networks": "maia_project_maia-network",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "127.0.0.1:8080->8080/tcp",
+      "RunningFor": "11 days ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    },
+    {
+      "Command": "\"docker-entrypoint.s…\"",
+      "CreatedAt": "2026-09-17 11:30:58 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "506b7a029a35",
+      "Image": "postgres:15-alpine",
+      "Labels": "com.docker.compose.config-hash=f69c7f474a192443e0d6b56fa8b72eea5e316507db1cdd9a751553b9ded4771e,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:09e4f20b14ddb3dfe3a0c825b206032aaf8f28300ba2070c0b60fc1c10c6abc7,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/shaen/maia_project/docker-compose.yml,com.docker.compose.project.working_dir=/home/shaen/maia_project,com.docker.compose.project=maia_project,com.docker.compose.replace=maia-db,com.docker.compose.service=maia-db,com.docker.compose.version=5.1.4",
+      "LocalVolumes": "1",
+      "Mounts": "maia_project_p…",
+      "Names": "maia-db",
+      "Networks": "maia_project_maia-network",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "127.0.0.1:5432->5432/tcp",
+      "RunningFor": "3 weeks ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    },
+    {
+      "Command": "\"tini -- /docker-ent…\"",
+      "CreatedAt": "2026-09-17 11:30:58 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "021acc86aa18",
+      "Image": "n8nio/n8n",
+      "Labels": "com.docker.compose.config-hash=a2cdcec610ab33b129cdec063db071ac67cbbaf34d1714f1c619ac3282280bc5,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:4613a202077b00e9a66a9ed83cccae01866ddc0df59222d91409bfb0d70007dd,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/shaen/maia_project/docker-compose.yml,com.docker.compose.project.working_dir=/home/shaen/maia_project,com.docker.compose.project=maia_project,com.docker.compose.replace=n8n,com.docker.compose.service=n8n,com.docker.compose.version=5.1.4,com.docker.dhi.chain-id=sha256:b5a34a84c7e4bf5e5e3d292c081ca3675af412227b90613a3360a67b1f219c49,com.docker.dhi.compliance=cis,com.docker.dhi.created=2026-03-27T17:14:07Z,com.docker.dhi.date.end-of-life=2028-04-30,com.docker.dhi.date.release=2025-05-06,com.docker.dhi.definition=image/node/alpine-3.22/24-dev,com.docker.dhi.distro=alpine-3.22,com.docker.dhi.flavor=,com.docker.dhi.name=dhi/node,com.docker.dhi.package-manager=apk,com.docker.dhi.shell=busybox,com.docker.dhi.title=Node.js 24.x (dev),com.docker.dhi.url=https://dhi.io/catalog/node,com.docker.dhi.variant=dev,com.docker.dhi.version=24.14.1-alpine3.22-dev,org.opencontainers.image.description=Workflow Automation Tool,org.opencontainers.image.source=https://github.com/n8n-io/n8n,org.opencontainers.image.title=n8n,org.opencontainers.image.url=https://n8n.io,org.opencontainers.image.version=2.18.7",
+      "LocalVolumes": "1",
+      "Mounts": "maia_project_n…",
+      "Names": "n8n",
+      "Networks": "maia_project_maia-network",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "127.0.0.1:5678->5678/tcp",
+      "RunningFor": "3 weeks ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    },
+    {
+      "Command": "\"sh -c 'echo 'MAIA L…\"",
+      "CreatedAt": "2026-05-16 00:36:01 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "3ff89f7e81ef",
+      "Image": "alpine:latest",
+      "Labels": "com.docker.compose.config-hash=fb04a10ce30883fcaceec05150f670a8bb8a1ae931a9953cf37f19abb960cd77,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/shaen/maia_project/docker-compose.lab.yml,com.docker.compose.project.working_dir=/home/shaen/maia_project,com.docker.compose.project=maia_project,com.docker.compose.service=lab-sentinel,com.docker.compose.version=5.1.3,maia.env=lab,maia.role=sentinel",
+      "LocalVolumes": "0",
+      "Mounts": "",
+      "Names": "maia-lab-sentinel",
+      "Networks": "maia-lab-network",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "",
+      "RunningFor": "5 months ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    },
+    {
+      "Command": "\"python /app/session…\"",
+      "CreatedAt": "2026-05-15 16:12:59 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "c0b577042781",
+      "Image": "maia-forwarder-img",
+      "Labels": "com.docker.compose.config-hash=9b3a801747b70b8052c8886a9f6720e1a3940558909fe8c5e5ac1bc36a5ae3f1,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:c66707a3d772870d77ad0d3458eb67a27d5a283c83a422984727dbb835ba4171,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/shaen/maia_project/docker-compose.yml,com.docker.compose.project.working_dir=/home/shaen/maia_project,com.docker.compose.project=maia_project,com.docker.compose.replace=maia-forwarder,com.docker.compose.service=maia-forwarder,com.docker.compose.version=5.1.3",
+      "LocalVolumes": "0",
+      "Mounts": "/home/shaen/ma…",
+      "Names": "maia-forwarder",
+      "Networks": "maia_project_maia-network",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "",
+      "RunningFor": "5 months ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    },
+    {
+      "Command": "\"glances -w --enable…\"",
+      "CreatedAt": "2026-05-05 12:18:53 +0300 EEST",
+      "HealthStatus": "none",
+      "ID": "c6b759a268d9",
+      "Image": "nicolargo/glances:latest-full",
+      "Labels": "org.opencontainers.image.created=2026-04-19T07:48:38.338Z,org.opencontainers.image.description=Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.,org.opencontainers.image.licenses=NOASSERTION,org.opencontainers.image.revision=05ff62d883d690809509517dec62684e6c4590d4,org.opencontainers.image.source=https://github.com/nicolargo/glances,org.opencontainers.image.title=glances,org.opencontainers.image.url=https://nicolargo.github.io/glances/,org.opencontainers.image.version=v4.5.4",
+      "LocalVolumes": "0",
+      "Mounts": "/var/run/docke…",
+      "Names": "nc_glances",
+      "Networks": "bridge",
+      "Platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "Ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp",
+      "RunningFor": "5 months ago",
+      "Size": "0B",
+      "State": "running",
+      "Status": "Up 4 hours"
+    }
+  ],
+  "git_repos": [
+    {
+      "path": "/home/shaen/karcas-dda",
+      "branch": "main",
+      "status": "",
+      "size": "668K"
+    },
+    {
+      "path": "/home/shaen/nova-cortex-lab",
+      "branch": "main-working",
+      "status": "",
+      "size": "9,9M"
+    },
+    {
+      "path": "/home/shaen/maia_project",
+      "branch": "master",
+      "status": "M .claude/settings.local.json\n M .gitignore\n M docker-compose.yml\n M docs/CLAUDE.md\n M docs/DECISIONS.md\n M docs/INVARIANTS.md\n M docs/ROADMAP.md\n M docs/RUNTIME.md\n M docs/TRANSITION.md\n M docs/VISION.md\n?? .claude/settings.local.json.backup_20260930_042419\n?? docs/.gitignore\n?? docs/ARCHIVE/\n?? docs/AUDIT_2026-07.md\n?? \"docs/AUDIT_2026-09-\\320\\244\\320\\220\\320\\235\\320\\242\\320\\236\\320\\234\\320\\253.md\"\n?? docs/CONFIG_PLAN_v1.5.md\n?? docs/HANDOFF.md\n?? docs/PROMPTS_CHAT_LAUNCH.md\n?? docs/README.md\n?? docs_archive_20260821/\n?? watchdog_new.sh",
+      "size": "1,3G"
+    },
+    {
+      "path": "/home/shaen/nova-registry",
+      "branch": "main",
+      "status": "",
+      "size": "620K"
+    },
+    {
+      "path": "/home/shaen/posoh-docs",
+      "branch": "main",
+      "status": "",
+      "size": "696K"
+    },
+    {
+      "path": "/home/shaen/novohalyshchyna-repo",
+      "branch": "main",
+      "status": "",
+      "size": "288K"
+    },
+    {
+      "path": "/home/shaen/shaenxxx-commits.github.io",
+      "branch": "main",
+      "status": "",
+      "size": "660K"
+    },
+    {
+      "path": "/home/shaen/envoy",
+      "branch": "main",
+      "status": "",
+      "size": "1,1M"
+    },
+    {
+      "path": "/home/shaen/posoh",
+      "branch": "main",
+      "status": "?? posoh/",
+      "size": "4,9G"
+    },
+    {
+      "path": "/home/shaen/lch",
+      "branch": "main",
+      "status": "",
+      "size": "2,5M"
+    },
+    {
+      "path": "/home/shaen/maia_project/docs",
+      "branch": "main",
+      "status": "",
+      "size": "988K"
+    },
+    {
+      "path": "/home/shaen/Рабочий стол/соцрепо",
+      "branch": "main",
+      "status": "?? docs/AGENT.md.save",
+      "size": "468K"
+    },
+    {
+      "path": "/home/shaen/Рабочий стол/maia_repo",
+      "branch": "main",
+      "status": "",
+      "size": "468K"
+    },
+    {
+      "path": "/home/shaen/Рабочий стол/posoh-docs",
+      "branch": "main",
+      "status": "",
+      "size": "456K"
+    },
+    {
+      "path": "/home/shaen/posoh/posoh",
+      "branch": "main",
+      "status": "",
+      "size": "244K"
+    }
+  ],
+  "unknown": []
+}

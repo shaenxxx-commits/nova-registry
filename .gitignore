@@ -27,3 +27,5 @@ tmp/
 # Keep records/ directory but not temporary dumps inside
 records/*.tmp
 records/*.log
+records/latest.html
+records/*.json

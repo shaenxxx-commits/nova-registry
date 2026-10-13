@@ -8,7 +8,7 @@
 **Статус проекта:** Enhanced
 
 ## Текущая цель
-Доработка nova-registry завершена. Следующий шаг: создание GitHub-зеркала.
+Доработка nova-registry завершена. GitHub-зеркало создано и запушено.
 
 ## Завершено
 - [x] Создание структуры каталогов (docs/, meta/, records/, ARCHIVE/)
@@ -47,6 +47,8 @@
 - [x] README.md quickstart в корне проекта
 - [x] .gitignore: records/latest.html, records/*.json
 - [x] Решение D-20261013-03: снимки не коммитить в git
+- [x] GitHub-зеркало shaenxxx-commits/nova-registry создано и запушено (f880943)
+- [x] Topics: infrastructure, snapshot, monitoring, dda, karcas-dda
 
 ## В работе
 Нет.
@@ -55,13 +57,13 @@
 Нет.
 
 ## Следующее действие
-Создать GitHub-зеркало shaenxxx-commits/nova-registry (вручную оператором) и заполнить raw-ссылки в 00_ENTRY.md.
+Заполнить raw-ссылки в 00_ENTRY.md после публикации репозитория.
 
 ## Известные проблемы
-- GitHub-зеркало shaenxxx-commits/nova-registry еще не создано; raw-ссылки в 00_ENTRY.md не заполнены.
+Нет.
 
 ## Известные неизвестные (UNKNOWN)
 - Будет ли сбор работать корректно без sudo (ограничение хоста).
 
 ## Соответствие документации реальности
-Проверено: nova_registry.py успешно создает JSON-снимки и HTML-дашборд. Снимок 004 подтвердил стабильность.
+Проверено: nova_registry.py успешно создает JSON-снимки и HTML-дашборд. Снимок 004 подтвердил стабильность. GitHub-зеркало синхронизировано.
